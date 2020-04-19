@@ -9,6 +9,10 @@
   </div>
 </div>
 
+<div id='mapp' style='width: 400px; height: 300px;'></div>
+
+
+
 <table>
   <thead>
     <tr>
@@ -38,3 +42,21 @@
 <br>
 
 <%= link_to 'New Point', new_point_path %>
+
+<div data-controller="map">
+
+  <p>stimulusで地図表示</p>
+
+　<!-- ↓②↓ -->
+  <div id="idmeihatekitoudemoiiyo" style="width:500px; height:300px"  data-target="map.map" ></div>
+
+
+</div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoid2t5bTRhIiwiYSI6ImNrOTc0YnZpZzEwOXkzZW8xZjhrc3VxMTgifQ.FSjecqZ_pzwIEgPzBfsuoQ';
+var map = new mapboxgl.Map({
+    container: 'mapp',
+    style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>

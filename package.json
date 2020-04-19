@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "5.0.1",
+    "mapbox": "^1.0.0-beta10",
+    "mapbox-gl": "^1.9.1",
     "stimulus": "^1.1.1"
   },
   "devDependencies": {
